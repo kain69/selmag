@@ -1,4 +1,4 @@
-package ru.karmazin.managerapp;
+package ru.karmazin.manager;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
