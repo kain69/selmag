@@ -1,7 +1,7 @@
-package ru.karmazin.manager.repository;
+package ru.karmazin.catalogue.repository;
 
 import org.springframework.stereotype.Repository;
-import ru.karmazin.manager.entity.Product;
+import ru.karmazin.catalogue.entity.Product;
 
 import java.util.Collections;
 import java.util.Comparator;

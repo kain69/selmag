@@ -1,9 +1,9 @@
-package ru.karmazin.manager.service;
+package ru.karmazin.catalogue.service;
 
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
-import ru.karmazin.manager.entity.Product;
-import ru.karmazin.manager.repository.ProductRepository;
+import ru.karmazin.catalogue.entity.Product;
+import ru.karmazin.catalogue.repository.ProductRepository;
 
 import java.util.List;
 import java.util.NoSuchElementException;

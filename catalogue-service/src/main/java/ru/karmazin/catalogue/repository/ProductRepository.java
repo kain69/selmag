@@ -1,6 +1,6 @@
-package ru.karmazin.manager.repository;
+package ru.karmazin.catalogue.repository;
 
-import ru.karmazin.manager.entity.Product;
+import ru.karmazin.catalogue.entity.Product;
 
 import java.util.List;
 import java.util.Optional;
