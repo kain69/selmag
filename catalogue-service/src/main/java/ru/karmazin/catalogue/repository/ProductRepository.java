@@ -1,16 +1,11 @@
 package ru.karmazin.catalogue.repository;
 
+import org.springframework.data.jpa.repository.Query;
+import org.springframework.data.repository.CrudRepository;
+import org.springframework.data.repository.query.Param;
 import ru.karmazin.catalogue.entity.Product;
 
-import java.util.List;
-import java.util.Optional;
-
-public interface ProductRepository {
-    List<Product> findAll();
-
-    Product save(Product product);
-
-    Optional<Product> findById(Integer productId);
-
-    void deleteById(Integer id);
+public interface ProductRepository extends CrudRepository<Product, Integer> {
+    @Query(name = "Product.findAllByTitleLikeIgnoringCase")
+    Iterable<Product> findAllByTitleLikeIgnoreCase(@Param("filter") String filter);
 }
